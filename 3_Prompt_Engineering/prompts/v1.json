@@ -1,0 +1,7 @@
+{
+  "version": "v1",
+  "description": "Basic prompt — short, direct answers",
+  "system": "You are a helpful assistant. Answer the user's question clearly and concisely in 1-2 sentences.",
+  "temperature": 0.3,
+  "max_tokens": 100
+}

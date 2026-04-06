@@ -1,0 +1,7 @@
+LangChain is a powerful framework for building applications with language models. 
+It provides abstractions and utilities to make LLM-powered apps easier to develop.
+
+This includes support for memory, chains, agents, and retrieval-augmented generation (RAG). 
+It also helps with prompt management and evaluation.
+
+LangChain is modular and supports many backends, including OpenAI, Cohere, and HuggingFace.

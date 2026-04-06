@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "version":      "v2.1.0",
+    "name":         "support_detailed",
+    "description":  "Detailed structured support — returns JSON with action items",
+    "author":       "prompt-team",
+    "created_at":   "2025-02-01",
+    "updated_at":   "2025-03-20",
+    "status":       "stable",
+    "environment":  ["production"],
+    "tags":         ["support", "structured", "json-output", "ticketing"]
+  },
+  "model": {
+    "name":         "gpt-4o",
+    "temperature":  0.2,
+    "max_tokens":   800,
+    "top_p":        0.95,
+    "presence_penalty": 0.1,
+    "frequency_penalty": 0.2
+  },
+  "prompt": {
+    "system": "You are a senior customer support specialist for CloudBase SaaS.\n\nYour task is to analyse the customer's issue and return a structured JSON response.\n\nReturn ONLY valid JSON with this exact schema:\n{\n  \"greeting\": \"<personalised greeting using customer name>\",\n  \"issue_summary\": \"<1 sentence summary of the problem>\",\n  \"category\": \"<billing|technical|account|shipping|other>\",\n  \"priority\": \"<low|medium|high|critical>\",\n  \"response\": \"<full empathetic response to the customer, 2-4 sentences>\",\n  \"action_items\": [\"<step 1>\", \"<step 2>\"],\n  \"escalate\": <true|false>,\n  \"escalation_reason\": \"<reason if escalate is true, else null>\",\n  \"suggested_article\": \"<help article title or null>\",\n  \"closing\": \"Is there anything else I can help you with?\"\n}\n\nPriority rules:\n- critical: data loss, billing errors over $100, complete service outage\n- high: feature completely broken, payment declined\n- medium: partial issues, slow performance\n- low: general questions, feature requests",
+    "user_template": "Customer name: {customer_name}\nPlan: {plan}\nAccount age: {account_age_days} days\nOpen tickets: {open_tickets}\nMessage: {user_message}"
+  },
+  "few_shot_examples": [
+    {
+      "role":    "user",
+      "content": "Customer name: Priya\nPlan: Enterprise\nAccount age: 420 days\nOpen tickets: 0\nMessage: We are being charged for 50 seats but only have 30 active users."
+    },
+    {
+      "role":    "assistant",
+      "content": "{\"greeting\": \"Hi Priya\", \"issue_summary\": \"Customer is billed for 50 seats but only has 30 active users.\", \"category\": \"billing\", \"priority\": \"high\", \"response\": \"Hi Priya, thank you for flagging this billing discrepancy. I can see you are on the Enterprise plan and this is certainly something we will investigate and correct. Our billing team will audit your active seats and issue a prorated credit for any overcharge.\", \"action_items\": [\"Audit active seat count on account\", \"Issue prorated credit if overcharge confirmed\", \"Send updated invoice within 24 hours\"], \"escalate\": true, \"escalation_reason\": \"Billing discrepancy on Enterprise account — requires finance team review\", \"suggested_article\": \"How to manage team seats and billing\", \"closing\": \"Is there anything else I can help you with?\"}"
+    }
+  ],
+  "output_rules": {
+    "format":           "json",
+    "required_fields":  ["greeting", "issue_summary", "category", "priority", "response", "action_items", "escalate", "closing"],
+    "valid_categories": ["billing", "technical", "account", "shipping", "other"],
+    "valid_priorities": ["low", "medium", "high", "critical"],
+    "tone_check":       true,
+    "forbidden_phrases": ["I don't know", "Not possible", "You're wrong"]
+  },
+  "channels": ["api", "crm", "ticketing_system"],
+  "fallback_version": "support_v1"
+}
