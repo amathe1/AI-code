@@ -1,0 +1,173 @@
+{
+  "company": {
+    "name": "TechCorp Inc.",
+    "founded": 2015,
+    "headquarters": "San Francisco, CA",
+    "website": "https://techcorp.io",
+    "industry": "Software & AI",
+    "total_employees": 5,
+    "fiscal_year": 2026
+  },
+  "departments": [
+    {
+      "dept_id": "D001",
+      "name": "Engineering",
+      "head": "Carol White",
+      "budget_usd": 2500000,
+      "employees": [
+        {
+          "emp_id": "EMP-001",
+          "name": "Carol White",
+          "role": "Engineering Lead",
+          "email": "carol.white@techcorp.io",
+          "salary_usd": 1500000,
+          "joined": "2018-03-15",
+          "status": "Active",
+          "skills": ["Python", "Kubernetes", "System Design", "AI/ML"],
+          "performance": {
+            "q1_2026": 4.8,
+            "q4_2025": 4.6,
+            "q3_2025": 4.7
+          },
+          "address": {
+            "city": "San Francisco",
+            "state": "CA",
+            "country": "USA"
+          }
+        },
+        {
+          "emp_id": "EMP-002",
+          "name": "Raj Patel",
+          "role": "Senior Software Engineer",
+          "email": "raj.patel@techcorp.io",
+          "salary_usd": 1200000,
+          "joined": "2020-07-01",
+          "status": "Active",
+          "skills": ["Go", "React", "PostgreSQL", "Docker"],
+          "performance": {
+            "q1_2026": 4.5,
+            "q4_2025": 4.3,
+            "q3_2025": 4.4
+          },
+          "address": {
+            "city": "Austin",
+            "state": "TX",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "dept_id": "D002",
+      "name": "Sales",
+      "head": "Alice Johnson",
+      "budget_usd": 1800000,
+      "employees": [
+        {
+          "emp_id": "EMP-003",
+          "name": "Alice Johnson",
+          "role": "Sales Director",
+          "email": "alice.johnson@techcorp.io",
+          "salary_usd": 1200000,
+          "joined": "2017-11-20",
+          "status": "Active",
+          "skills": ["CRM", "Negotiation", "Enterprise Sales", "Salesforce"],
+          "performance": {
+            "q1_2026": 4.9,
+            "q4_2025": 4.8,
+            "q3_2025": 4.7
+          },
+          "address": {
+            "city": "New York",
+            "state": "NY",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "dept_id": "D003",
+      "name": "Human Resources",
+      "head": "David Lee",
+      "budget_usd": 900000,
+      "employees": [
+        {
+          "emp_id": "EMP-004",
+          "name": "David Lee",
+          "role": "HR Manager",
+          "email": "david.lee@techcorp.io",
+          "salary_usd": 700000,
+          "joined": "2019-05-10",
+          "status": "On Leave",
+          "skills": ["Recruitment", "Payroll", "Compliance", "HRMS"],
+          "performance": {
+            "q1_2026": 4.0,
+            "q4_2025": 4.2,
+            "q3_2025": 4.1
+          },
+          "address": {
+            "city": "Chicago",
+            "state": "IL",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "dept_id": "D004",
+      "name": "Finance",
+      "head": "Eva Green",
+      "budget_usd": 1200000,
+      "employees": [
+        {
+          "emp_id": "EMP-005",
+          "name": "Eva Green",
+          "role": "Finance Manager",
+          "email": "eva.green@techcorp.io",
+          "salary_usd": 1150000,
+          "joined": "2021-02-28",
+          "status": "Active",
+          "skills": ["Financial Modeling", "Excel", "SAP", "Budgeting"],
+          "performance": {
+            "q1_2026": 4.6,
+            "q4_2025": 4.5,
+            "q3_2025": 4.3
+          },
+          "address": {
+            "city": "Miami",
+            "state": "FL",
+            "country": "USA"
+          }
+        }
+      ]
+    }
+  ],
+  "products": [
+    {"product_id": "PRD-001", "name": "Analytics Pro",    "category": "SaaS",     "price_usd": 2500,  "status": "Active",   "q1_revenue": 1200000},
+    {"product_id": "PRD-002", "name": "DataSync API",     "category": "API",      "price_usd": 720,   "status": "Active",   "q1_revenue": 860000},
+    {"product_id": "PRD-003", "name": "CloudStore Lite",  "category": "Storage",  "price_usd": 159,   "status": "Active",   "q1_revenue": 540000},
+    {"product_id": "PRD-004", "name": "ML Pipeline Kit",  "category": "Platform", "price_usd": 4380,  "status": "Active",   "q1_revenue": 920000},
+    {"product_id": "PRD-005", "name": "ReportBuilder v2", "category": "SaaS",     "price_usd": 428,   "status": "Pending",  "q1_revenue": 380000},
+    {"product_id": "PRD-006", "name": "Legacy Monitor",   "category": "Monitor",  "price_usd": 2000,  "status": "Inactive", "q1_revenue": 300000}
+  ],
+  "financials": {
+    "q1_2026": {
+      "total_revenue_usd": 4200000,
+      "total_expenses_usd": 3100000,
+      "net_profit_usd": 1100000,
+      "growth_vs_q1_2025_pct": 18.0
+    },
+    "q4_2025": {
+      "total_revenue_usd": 3800000,
+      "total_expenses_usd": 2900000,
+      "net_profit_usd": 900000,
+      "growth_vs_q4_2024_pct": 14.5
+    }
+  },
+  "metadata": {
+    "created_at": "2026-04-09T10:00:00Z",
+    "created_by": "HR System",
+    "version": "2.1",
+    "classification": "Confidential"
+  }
+}

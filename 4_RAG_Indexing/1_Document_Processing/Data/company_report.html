@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechCorp — Q1 2026 Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0f1117;
+      --muted:  #6b7280;
+      --accent: #0052cc;
+      --gold:   #d97706;
+      --green:  #059669;
+      --red:    #dc2626;
+      --bg:     #f8f7f4;
+      --card:   #ffffff;
+      --border: #e5e2dc;
+      --serif:  'DM Serif Display', Georgia, serif;
+      --sans:   'DM Sans', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      color: #fff;
+      padding: 48px 64px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: rgba(0,82,204,0.25);
+    }
+    .header-meta { font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: #94a3b8; margin-bottom: 12px; }
+    header h1 { font-family: var(--serif); font-size: 52px; line-height: 1.1; margin-bottom: 8px; }
+    header h1 em { color: #60a5fa; font-style: italic; }
+    .header-sub { font-size: 15px; color: #94a3b8; }
+
+    /* ── Layout ── */
+    main { max-width: 1040px; margin: 0 auto; padding: 56px 32px; }
+
+    /* ── Section headings ── */
+    section { margin-bottom: 64px; }
+    .section-label {
+      font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--accent); font-weight: 600; margin-bottom: 8px;
+    }
+    h2 {
+      font-family: var(--serif); font-size: 34px; margin-bottom: 20px;
+      border-bottom: 2px solid var(--border); padding-bottom: 12px;
+    }
+    h3 { font-size: 16px; font-weight: 600; margin: 24px 0 10px; color: var(--ink); }
+
+    /* ── KPI cards ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .kpi-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+    .kpi-card.gold::before  { background: var(--gold); }
+    .kpi-card.green::before { background: var(--green); }
+    .kpi-card.red::before   { background: var(--red); }
+    .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 10px; }
+    .kpi-value { font-family: var(--serif); font-size: 36px; line-height: 1; margin-bottom: 6px; }
+    .kpi-change { font-size: 12px; font-weight: 500; }
+    .kpi-change.up   { color: var(--green); }
+    .kpi-change.down { color: var(--red); }
+
+    /* ── Paragraphs ── */
+    p { font-size: 15px; color: #374151; margin-bottom: 14px; max-width: 720px; }
+
+    /* ── Unordered list ── */
+    ul.report-list { list-style: none; padding: 0; margin-bottom: 14px; }
+    ul.report-list li {
+      padding: 8px 0 8px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: #374151;
+      position: relative;
+    }
+    ul.report-list li::before {
+      content: '▸';
+      position: absolute; left: 0;
+      color: var(--accent);
+    }
+
+    /* ── Data table ── */
+    .table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid var(--border); margin-top: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead { background: var(--ink); color: #fff; }
+    thead th { padding: 14px 18px; text-align: left; font-weight: 500; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #fafaf8; }
+    tbody td { padding: 13px 18px; color: #374151; }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+    .badge {
+      display: inline-block; padding: 2px 10px; border-radius: 999px;
+      font-size: 11px; font-weight: 600; letter-spacing: .04em;
+    }
+    .badge.active   { background: #d1fae5; color: #065f46; }
+    .badge.pending  { background: #fef3c7; color: #92400e; }
+    .badge.inactive { background: #fee2e2; color: #991b1b; }
+
+    /* ── Ordered list ── */
+    ol.steps { padding-left: 20px; }
+    ol.steps li { font-size: 14px; padding: 6px 0; color: #374151; }
+    ol.steps li strong { color: var(--ink); }
+
+    /* ── Blockquote ── */
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 16px 24px;
+      background: #eff6ff;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      font-style: italic;
+      color: #1e40af;
+      font-size: 15px;
+    }
+    blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size: 12px; color: var(--muted); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      color: #94a3b8;
+      text-align: center;
+      padding: 28px;
+      font-size: 12px;
+      letter-spacing: .05em;
+    }
+    footer strong { color: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-meta">Quarterly Report · Q1 2026</div>
+  <h1>TechCorp <em>Annual</em> Review</h1>
+  <p class="header-sub">Financial Performance &amp; Strategic Outlook — April 2026</p>
+</header>
+
+<main>
+
+  <!-- ── Section 1: KPIs ───────────────────────────────────────────── -->
+  <section id="kpis">
+    <div class="section-label">At a Glance</div>
+    <h2>Key Performance Indicators</h2>
+
+    <div class="kpi-grid">
+      <div class="kpi-card" data-metric="revenue">
+        <div class="kpi-label">Total Revenue</div>
+        <div class="kpi-value">$4.2M</div>
+        <div class="kpi-change up">↑ 18% vs Q1 2025</div>
+      </div>
+      <div class="kpi-card gold" data-metric="customers">
+        <div class="kpi-label">Active Customers</div>
+        <div class="kpi-value">1,340</div>
+        <div class="kpi-change up">↑ 230 new this quarter</div>
+      </div>
+      <div class="kpi-card green" data-metric="nps">
+        <div class="kpi-label">Net Promoter Score</div>
+        <div class="kpi-value">72</div>
+        <div class="kpi-change up">↑ 5 pts from last quarter</div>
+      </div>
+      <div class="kpi-card red" data-metric="churn">
+        <div class="kpi-label">Churn Rate</div>
+        <div class="kpi-value">2.1%</div>
+        <div class="kpi-change down">↓ 0.4% improvement</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Section 2: Overview ───────────────────────────────────────── -->
+  <section id="overview">
+    <div class="section-label">Executive Summary</div>
+    <h2>Company Overview</h2>
+
+    <p>TechCorp delivered a strong Q1 2026, exceeding revenue targets by <strong>12%</strong> and expanding into three new geographic markets. The engineering team shipped <strong>47 product updates</strong>, including the highly anticipated AI-assisted dashboard launched in February.</p>
+
+    <p>Customer retention improved across all segments, with enterprise accounts showing the strongest growth at <strong>34% year-over-year</strong>. The sales pipeline entering Q2 stands at $9.8M, the largest in company history.</p>
+
+    <blockquote>
+      "This quarter proved that our platform strategy is resonating with the market. We're not just retaining customers — we're expanding within them."
+      <cite>— Sarah Mitchell, CEO, TechCorp</cite>
+    </blockquote>
+  </section>
+
+  <!-- ── Section 3: Product Table ─────────────────────────────────── -->
+  <section id="products">
+    <div class="section-label">Product Performance</div>
+    <h2>Product Revenue Breakdown</h2>
+
+    <div class="table-wrap">
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Q1 Revenue</th>
+            <th>Units Sold</th>
+            <th>Growth</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PRD-001</td>
+            <td>Analytics Pro</td>
+            <td>SaaS</td>
+            <td class="num">$1,200,000</td>
+            <td class="num">480</td>
+            <td class="num">+22%</td>
+            <td><span class="badge active">Active</span></td>
+          </tr>
+          <tr>
+            <td>PRD-002</td>
+            <td>DataSync API</td>
+            <td>API</td>
+            <td class="num">$860,000</td>
+            <td class="num">1,200</td>
+            <td class="num">+15%</td>
+            <td><span class="badge active">Active</span></td>
+          </tr>
+          <tr>
+            <td>PRD-003</td>
+            <td>CloudStore Lite</td>
+            <td>Storage</td>
+            <td class="num">$540,000</td>
+            <td class="num">3,400</td>
+            <td class="num">+8%</td>
+            <td><span class="badge active">Active</span></td>
+          </tr>
+          <tr>
+            <td>PRD-004</td>
+            <td>ML Pipeline Kit</td>
+            <td>Platform</td>
+            <td class="num">$920,000</td>
+            <td class="num">210</td>
+            <td class="num">+41%</td>
+            <td><span class="badge active">Active</span></td>
+          </tr>
+          <tr>
+            <td>PRD-005</td>
+            <td>ReportBuilder v2</td>
+            <td>SaaS</td>
+            <td class="num">$380,000</td>
+            <td class="num">890</td>
+            <td class="num">+3%</td>
+            <td><span class="badge pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>PRD-006</td>
+            <td>Legacy Monitor</td>
+            <td>Monitoring</td>
+            <td class="num">$300,000</td>
+            <td class="num">150</td>
+            <td class="num">-12%</td>
+            <td><span class="badge inactive">Inactive</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── Section 4: Highlights list ──────────────────────────────── -->
+  <section id="highlights">
+    <div class="section-label">Quarter Highlights</div>
+    <h2>Key Achievements</h2>
+
+    <h3>Engineering</h3>
+    <ul class="report-list" id="engineering-list">
+      <li>Launched AI-assisted dashboard with real-time anomaly detection</li>
+      <li>Reduced API response time by 38% through infrastructure optimization</li>
+      <li>Achieved 99.98% uptime across all production services</li>
+      <li>Migrated 100% of legacy services to Kubernetes</li>
+    </ul>
+
+    <h3>Sales &amp; Marketing</h3>
+    <ul class="report-list" id="sales-list">
+      <li>Closed 3 enterprise deals worth $1.2M combined</li>
+      <li>Expanded into Germany, Japan, and Brazil markets</li>
+      <li>Launched partner program with 12 certified resellers</li>
+    </ul>
+  </section>
+
+  <!-- ── Section 5: Q2 Priorities ─────────────────────────────────── -->
+  <section id="roadmap">
+    <div class="section-label">Looking Ahead</div>
+    <h2>Q2 2026 Priorities</h2>
+
+    <ol class="steps" id="priorities-list">
+      <li><strong>Product:</strong> Release ML Pipeline Kit v2.0 with AutoML features</li>
+      <li><strong>Sales:</strong> Achieve $5M ARR milestone by end of Q2</li>
+      <li><strong>Engineering:</strong> Complete SOC 2 Type II certification</li>
+      <li><strong>HR:</strong> Hire 15 engineers across AI and Platform teams</li>
+      <li><strong>Marketing:</strong> Launch annual TechCorp Summit in San Francisco</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer>
+  <strong>TechCorp Inc.</strong> · 101 Innovation Drive, San Francisco, CA · Q1 2026 Report · Confidential
+</footer>
+
+</body>
+</html>

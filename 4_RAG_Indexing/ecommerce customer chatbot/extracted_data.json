@@ -1,0 +1,332 @@
+{
+  "source": "ecommerce_knowledge_base.pdf",
+  "metrics": {
+    "total_pages": 14,
+    "total_chars": 24770,
+    "total_words": 3604,
+    "total_sections": 15,
+    "total_tables": 27,
+    "empty_pages": 0,
+    "extraction_time_ms": 1352.82,
+    "avg_words_per_section": 234.3,
+    "coverage_pct": 100.0,
+    "quality_score": 100.0
+  },
+  "sections": [
+    {
+      "section_id": "sec_000",
+      "section_num": "0",
+      "title": "Preamble",
+      "content": "Customer Service Knowledge Base\nProduction RAG Knowledge Document | | April 2026\nCustomer Operations & Policy Management Division\n14 Major Sections 100+ Policy Rules Prime vs Standard All Edge Cases\nMembership Tiers Returns & Refunds Shipping & Delivery Damage Claims\nInventory Mgmt Payment & Billing Fraud Prevention Escalation SLAs",
+      "page_start": 1,
+      "char_count": 333,
+      "word_count": 49,
+      "table_count": 1,
+      "subsections": [],
+      "content_hash": "333ad817f4aff585407b048e8c8cb5b7",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_001",
+      "section_num": "1",
+      "title": "Section 1: Membership & Subscription Tiers",
+      "content": "1.1 ShopNow Standard Membership\nStandard membership is the default free tier available to all registered customers. Standard members have access to the full product\ncatalogue and checkout but receive baseline service levels without priority benefits.\nFeature Standard Entitlement\nDelivery speed 5\u20137 business days standard, 2\u20133 days express (paid)\nCustomer support Email within 48 hours, live chat queue (no priority)\nReturn window 15 days from delivery confirmation\nFree returns First return per order free; subsequent returns: $3.99 label fee\nPrice match Not eligible\nEarly access sales Not eligible\nWishlist / saved items Up to 50 items\nOrder history retention 12 months\n1.2 ShopNow Prime Membership\nPrime membership is a paid subscription tier at $14.99/month or $139/year (saving $40.88 annually). Prime members receive\nelevated service across every dimension of the shopping experience.\nFeature Prime Entitlement\nDelivery speed Free 2-day delivery on 5M+ eligible items; same-day in 40+ metros\nCustomer support Dedicated Prime line \u2014 wait time under 2 min; 24/7 availability\nReturn window 30 days from delivery; extended to 60 days November\u2013January\nFree returns Unlimited free returns on all Prime-eligible orders\nPrice match Guaranteed lowest price + 5% additional credit if lower found within 7 days\nEarly access sales 48-hour head start on all flash sales and new product launches\nExclusive deals Prime-only discounts averaging 18% deeper than standard price\nWishlist / saved items Unlimited\nOrder history retention 5 years with downloadable export\nPrime Video + Music Included at no extra cost\nFamily sharing Up to 5 household members share Prime benefits (separate accounts)\nPrime Try Before You Buy Order up to 6 items, 7-day trial, pay only for what you keep\nAgent Note: Always verify membership tier before quoting delivery timelines, return windows, or support SLAs. Use the account\ndashboard Membership tab. If a customer disputes their tier, verify the billing history \u2014 lapsed Prime members revert to Standard the\nday after expiry.\n1.3 Prime Trial, Upgrade & Downgrade Rules\nFree Trial: New customers receive a 30-day Prime trial. Trial members receive full Prime benefits. Trial automatically converts to paid\nsubscription on Day 31 unless cancelled. Cancellation during trial: no charge, immediate reversion to Standard.\n\nUpgrading Standard to Prime: Instant benefit activation upon payment. Prorated credit is NOT applied to existing pending orders \u2014\ndelivery and return terms remain as quoted at checkout.\nDowngrading Prime to Standard: Benefits continue until the current billing cycle ends. Outstanding Prime Try Before You Buy items\nmust be returned or purchased before downgrade. Customers may not reinstate a trial after prior trial use.",
+      "page_start": 2,
+      "char_count": 2763,
+      "word_count": 418,
+      "table_count": 1,
+      "subsections": [
+        "1.1 ShopNow Standard Membership",
+        "1.2 ShopNow Prime Membership",
+        "1.3 Prime Trial, Upgrade & Downgrade Rules"
+      ],
+      "content_hash": "45f48c2974022849349f5310cf5a836a",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_002",
+      "section_num": "2",
+      "title": "Section 2: Customer Support",
+      "content": "2.1 Support Channels & SLA by Tier\nChannel Standard SLA Prime SLA\nLive Chat Standard: queue, avg 12 min Prime: priority queue, avg 90 sec\nPhone Standard: not available Prime: dedicated line, avg 90 sec\nEmail Standard: 48-hour response Prime: 12-hour response\nCallback Standard: not available Prime: within 30 minutes\nSocial Media DM Both: 24-hour response Prime: 4-hour response\nIn-App Chat Bot Both: 24/7 instant tier 1 Prime: escalation in 60 sec\nAfter-hours Bot only Prime: 24/7 live agent\n2.2 Escalation Tiers\nTier Agent Level Scope Target Resolution Ownership\nAutomated bot /\nTier 1 Password reset, order status, tracking Instant Bot\nself-service\nTier 2 Frontline agent Returns, cancellations, basic billing 5 min (Prime) / 15 min (Std) Agent\nDisputed charges, account suspension,\nTier 3 Senior specialist Same day Specialist\nfraud\nLegal threats, regulatory complaints,\nTier 4 Team lead / manager 4 hours Lead\nmedia\nTier 5 Executive escalation Class actions, government inquiries 2 hours VP+\n2.3 Contact Resolution Standards\nEvery customer interaction must result in one of three documented outcomes: (1) Issue fully resolved, (2) Escalation created with\nreference number provided to customer, or (3) Pending action documented with expected resolution date communicated. Agents must\nnever close a ticket marked 'pending' without first setting an automated follow-up reminder within 24 hours.\nFirst Contact Resolution (FCR) targets: Tier 2 agents: 78% FCR. Tier 3 specialists: 92% FCR. Prime customers: 85% FCR\nminimum. Failure to meet FCR triggers supervisor review.",
+      "page_start": 3,
+      "char_count": 1571,
+      "word_count": 238,
+      "table_count": 1,
+      "subsections": [
+        "2.1 Support Channels & SLA by Tier",
+        "2.2 Escalation Tiers",
+        "2.3 Contact Resolution Standards"
+      ],
+      "content_hash": "f20e8697259a3e6701ea90db963dfca0",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_003",
+      "section_num": "3",
+      "title": "Section 3: Ordering & Checkout",
+      "content": "3.1 Order Lifecycle States\nOrder State Description\nPending Payment Order created, payment not yet captured\nPayment Confirmed Payment captured; order enters fulfilment queue\nPicking Warehouse team assigned; items being located\nPacking Items packed; weight and dimensions confirmed\nAwaiting Dispatch Ready for carrier pickup\nDispatched Handed to carrier; tracking number activated\nIn Transit Carrier has package; tracking updates every 4 hours\nOut for Delivery Last-mile delivery in progress; SMS/push alert sent\nDelivered Carrier marked delivered; 48-hour window to report issues\nCompleted 48 hours post-delivery with no issues raised\nCancelled Order cancelled pre-dispatch; refund initiated within 1 hour\nReturn Initiated Customer raised return; label issued\nReturn in Transit Carrier has return package\nReturn Received Warehouse confirmed receipt of return\nRefunded Refund processed to original payment method\n3.2 Order Modification & Cancellation\nCancellation window: Orders may be cancelled at no charge within 30 minutes of placement (Payment Confirmed state). After 30\nminutes, the order enters the picking queue and cancellation is not guaranteed.\nAddress changes: Allowed within 30 minutes of placement via self-service. After 30 minutes, contact support \u2014 possible only if order\nhas not reached 'Packing' state. Prime members receive priority address-change processing.\nItem quantity changes: Not supported post-confirmation. Customer must cancel and re-order, or add a separate order. Partial\ncancellations within a multi-item order are allowed pre-picking.\n3.3 Payment Methods Accepted\nPayment Method Details\nCredit / Debit Cards Visa, Mastercard, Amex, Discover \u2014 all regions\nShopNow Wallet Prepaid balance; earns 1.5% cashback on every purchase\nBuy Now Pay Later (BNPL) Affirm, Klarna, Afterpay \u2014 orders $50\u2013$3,000\nGift Cards Digital and physical; stackable up to 10 per order\nPayPal / Venmo Supported; no additional fee\nApple Pay / Google Pay Supported on mobile app and Safari/Chrome browsers\nCryptocurrency Bitcoin and Ethereum accepted; rate locked at checkout\nBank Transfer (ACH) Orders >$500; 1\u20132 business day processing delay\n\nCorporate Invoice Business accounts only; Net-30 terms; $5,000 minimum",
+      "page_start": 4,
+      "char_count": 2216,
+      "word_count": 313,
+      "table_count": 1,
+      "subsections": [
+        "3.1 Order Lifecycle States",
+        "3.2 Order Modification & Cancellation",
+        "3.3 Payment Methods Accepted"
+      ],
+      "content_hash": "dc0b67a4361af1a9cce666f66e809e5f",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_004",
+      "section_num": "4",
+      "title": "Section 4: Shipping & Delivery",
+      "content": "4.1 Delivery Speed Options\nOption Eligibility Cutoff ETA Cost\nOrder by 12:00 PM\nSame-Day Delivery Prime only By 9:00 PM same day $0 (Prime) / $12.99\nlocal\nNext-Day Delivery Prime + Standard (paid) Order by 11:59 PM Next business day $0 (Prime) / $9.99\n2-Day Delivery Prime eligible items Any time 2 business days $0 (Prime) / $7.99\nStandard 5\u20137 Day All customers Any time 5\u20137 business days $0 (orders>$35) / $4.99\nEconomy 7\u201314 Day All customers Any time 7\u201314 business days $0 (always free)\nInternational 70+ countries Any time 7\u201321 business days Calculated at checkout\nScheduled Delivery All customers 48h advance booking Customer-chosen slot $3.99 surcharge\n4.2 Carrier Partners & Tracking\nShopNow partners with multiple carriers to optimise cost and speed. Carrier selection is automatic based on package dimensions,\ndestination, and customer tier. Customers do not select the carrier at checkout.\nCarrier Use Case Tracking Frequency\nUPS Domestic parcels; signature required >$200 Real-time\nFedEx Express services; oversized items Real-time\nUSPS Small parcels; PO Box deliveries; rural routes Daily updates\nDHL International; 220+ countries Real-time\nAmazon Flex Same-day; last-mile urban delivery Live GPS\nOnTrac West Coast express; 1-day regional Real-time\nLaserShip East Coast express; 1-day regional Real-time\nFreight Oversized items >150lb; white-glove available Daily\n4.3 Delivery Failure Protocols\nFailed delivery attempt: Carrier leaves door tag. Customer has 5 business days to arrange re-delivery or collect from carrier facility.\nAfter 5 days, package returns to ShopNow warehouse.\nLost in transit: Declared lost after the carrier's maximum transit time plus 3 business days. Standard: full refund or replacement at\ncustomer's choice within 2 business days of investigation close. Prime: replacement dispatched within 24 hours, investigation runs in\nparallel.\nDelivered to wrong address: Carrier investigation opened within 4 hours of report. If unrecovered after 3 business days: full refund or\nreplacement. Prime: interim replacement dispatched Day 1.\n4.4 International Shipping Rules\nTopic Policy\nDuties & Taxes Customer responsibility; displayed at checkout where calculable\n\nProhibited items Hazardous materials, firearms, perishables, items banned in destination country\nCustoms delays ShopNow not liable; estimated 3\u20135 day clearance buffer shown at checkout\nReturns Customer ships back at own cost unless item is defective\nRefunds (intl.) Issued in original currency; exchange rate at time of original payment\nTracking Available via DHL/local partner; gaps possible in remote regions",
+      "page_start": 5,
+      "char_count": 2603,
+      "word_count": 378,
+      "table_count": 1,
+      "subsections": [
+        "4.1 Delivery Speed Options",
+        "4.2 Carrier Partners & Tracking",
+        "4.3 Delivery Failure Protocols",
+        "4.4 International Shipping Rules"
+      ],
+      "content_hash": "ff83a063ba2f1f0051464ef8f2c01617",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_005",
+      "section_num": "5",
+      "title": "Section 5: Returns & Refunds",
+      "content": "5.1 Return Windows by Tier & Category\nCategory Standard Window Prime Window Conditions\nElectronics (general) 15 days 30 days Must be unopened in original packaging\nElectronics (opened) 7 days 15 days Functional defect required for return\nClothing & Footwear 15 days 30 days Tags attached; unworn\nFurniture 7 days 30 days Unassembled; original packaging\nGrocery / Food 7 days 7 days Unopened or item defective\nHealth & Beauty Not accepted Not accepted Sealed products only if unopened\nBooks / Media 15 days 30 days No visible use\nJewellery 10 days 30 days Original packaging; hygiene seal intact\nToys & Games 15 days 30 days Unopened preferred; opened if defective\nSports & Outdoors 15 days 30 days Unused; original packaging\nAutomotive 15 days 30 days Unused; all original parts\nDigital Downloads No return No return Refund only if technical delivery failure\nGift Cards No return No return Non-refundable once redeemed\nCustomised Items No return No return Defective only \u2014 replacement not refund\nHoliday (Nov\u2013Jan) 30 days 60 days Extended holiday return policy\n5.2 Return Process Step-by-Step\n1. Customer initiates return via Account > Orders > Return Item (or contacts support).\n2. System validates: item eligibility, return window, order status.\n3. Return label generated (prepaid for Prime; $3.99 deducted for Standard on non-defective returns).\n4. Customer drops off at any UPS/FedEx location or schedules home pickup (Prime only, free).\n5. Carrier scans package \u2014 return tracking activates.\n6. Warehouse receives package: visual inspection within 24 hours of receipt.\n7. Inspection outcome: Approved / Partial credit / Rejected (with photo evidence sent to customer).\n8. Refund processed: Standard 5\u20137 business days; Prime 1\u20132 business days to original payment method.\n9. Rejection appeals: customer has 14 days to appeal with supporting evidence (photos, receipts).\n5.3 Refund Methods & Timelines\nRefund Method Standard Timeline Prime Timeline\nOriginal card (Visa/MC/Amex) 3\u20135 business days (Standard) 1\u20132 business days (Prime)\nShopNow Wallet credit Instant Instant\nPayPal 3\u20135 business days 1\u20132 business days\nGift card (original method) Instant to new gift card code Instant\nBNPL (Klarna/Affirm) Processed by provider: 5\u201310 days 5\u201310 days (provider SLA)\nBank transfer (ACH) 5\u20137 business days 3\u20135 business days\nCryptocurrency Refunded in USD equivalent USD equivalent, 1 day",
+      "page_start": 7,
+      "char_count": 2379,
+      "word_count": 364,
+      "table_count": 1,
+      "subsections": [
+        "5.1 Return Windows by Tier & Category",
+        "5.2 Return Process Step-by-Step",
+        "5.3 Refund Methods & Timelines"
+      ],
+      "content_hash": "63c055cd183ba9f4bc5abb9678de91ec",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_006",
+      "section_num": "6",
+      "title": "Section 6: Damaged & Defective Items",
+      "content": "6.1 Damage Classification\nDamage Type Definition Resolution\nDOA (Dead on Arrival) Item non-functional on first use Immediate replacement; no return required\nTransit Damage Physical damage from shipping Replacement or full refund; no return\nConcealed Damage Damage discovered after opening Photo required within 48h of delivery\nManufacturer Defect Item fails within warranty period Replacement or refund + warranty claim\nWear-and-tear Damage Customer misuse or normal wear Not covered; customer bears cost\nIncomplete Shipment Missing parts / accessories Missing items dispatched within 24h\nWrong Item Received SKU mismatch from order Correct item dispatched; return label sent\nCounterfeit / Inauthentic Authenticated as non-genuine product Full refund + $25 credit + investigation\n6.2 Damage Report Requirements\nTo process a damage claim efficiently, the following must be submitted:\n(cid:127) Minimum 3 clear photos: (a) outer packaging, (b) damage close-up, (c) item label/serial number.\n(cid:127) Report within 48 hours of delivery for transit damage (72 hours for Prime).\n(cid:127) Original order number and item description.\n(cid:127) Brief description of damage and when it was discovered.\n(cid:127) For high-value items (>$500): video unboxing footage is strongly recommended.\nAgent Action: For damage claims, never ask the customer to ship back a clearly damaged item unless it is an electronics return\n>$300. Issue replacement or refund immediately using the Damage Resolution Tool. Escalate to Tier 3 if item value exceeds $500 or\nif counterfeiting is suspected.",
+      "page_start": 8,
+      "char_count": 1571,
+      "word_count": 227,
+      "table_count": 1,
+      "subsections": [
+        "6.1 Damage Classification",
+        "6.2 Damage Report Requirements"
+      ],
+      "content_hash": "54c5e9c3a089bb9b07bb79b4dbae31ae",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_007",
+      "section_num": "7",
+      "title": "Section 7: Inventory & Product Availability",
+      "content": "7.1 Stock Status Definitions\nStatus Meaning\nIn Stock Available for immediate fulfilment; ships within 24h\nLow Stock Fewer than 10 units; shown as 'Only X left' on PDP\nIn Stock \u2014 Limited 1\u20133 units; purchase limited to 1 per customer to prevent hoarding\nPre-Order Not yet in warehouse; estimated availability date shown\nBack-Order Temporarily out of stock; customer placed in queue; ships when available\nDiscontinued Product no longer sold; no restocking planned\nOut of Stock Currently unavailable; may restock; customer can set alert\nWarehouse Only Available in warehouse but not via Prime fast-ship network\nRegional Only Available in specific geographic fulfilment zones\nSeller Fulfilled Third-party marketplace seller ships directly; varied SLAs\n7.2 Backorder & Pre-Order Policies\nPre-orders: Customer charged at time of order. If release date changes by >7 days, customer notified by email and given 48-hour\nwindow to cancel at no charge. Prime customers receive automatic early dispatch to ensure Day-1 delivery.\nBack-orders: Customer not charged until item ships. Estimated ship date shown at checkout. If ship date slips >14 days, customer\nreceives email with option to cancel. Back-ordered items hold the customer's price from time of order.\nStock-out after payment: If inventory error causes an order to be taken for out-of-stock item, customer receives: full refund + 10%\ndiscount voucher valid 30 days + priority queue for next restock.\n7.3 Third-Party Marketplace Sellers\nShopNow Marketplace allows third-party sellers to list products. Marketplace items are identified by 'Sold by [Seller Name], Fulfilled by\nShopNow' or 'Sold and Fulfilled by [Seller Name]'.\nTopic Policy\nReturns Always handled via ShopNow even if seller-fulfilled; standard policies apply\nRefunds ShopNow guarantees refund within 5 days if seller unresponsive\nCounterfeit claim ShopNow A-to-Z Guarantee: refund + seller suspension investigation\nSeller contact In-app messaging only; personal contact info not shared\nNegative reviews Cannot be removed by seller; moderated by ShopNow trust & safety\nSeller rating <3.5 star: performance review; <3.0 star: listing suspension",
+      "page_start": 9,
+      "char_count": 2152,
+      "word_count": 318,
+      "table_count": 1,
+      "subsections": [
+        "7.1 Stock Status Definitions",
+        "7.2 Backorder & Pre-Order Policies",
+        "7.3 Third-Party Marketplace Sellers"
+      ],
+      "content_hash": "d0e6ffad3a672225b57626cf5eb7415a",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_008",
+      "section_num": "8",
+      "title": "Section 8: Pricing, Promotions & Price Match",
+      "content": "8.1 Price Match Guarantee (Prime Only)\nPrime members are entitled to ShopNow's Price Match Guarantee on identical products sold by authorised retailers. If a Prime\nmember finds the exact item at a lower price within 7 days of purchase, ShopNow will refund the difference plus an additional 5%\ncredit to their ShopNow Wallet.\n\nRule Detail\nEligible retailers Amazon, Walmart, Target, Best Buy, Costco, and 200+ listed partners\nIneligible sources Auction sites, membership-only clubs (for non-members), liquidators, grey-market\nClaim window Within 7 days of ShopNow purchase\nProcess Submit claim via app with screenshot of lower price; resolved in 2 hours\nCredit type Difference refunded to original payment + 5% of difference as Wallet credit\nLimit 3 price match claims per customer per calendar month\nDynamic pricing ShopNow may auto-adjust price before claim if monitoring detects lower market price\n8.2 Coupons, Vouchers & Promotional Codes\nPolicy Area Rule\nStackability Maximum 2 promotions per order (1 percentage + 1 fixed amount)\nMinimum order Most promotions require minimum cart value (displayed on voucher)\nPrime exclusives Codes starting 'PRIME-' valid only for active Prime members\nSingle use Codes marked 'single use' deactivate immediately after redemption\nExpiry All codes have explicit expiry; system rejects expired codes automatically\nSharing Personal referral codes valid for new customers only; abuse triggers account review\nFlash sales Price shown is final; no additional discounts applicable during flash event\nEmployee codes Separate system; not applicable to standard customer accounts",
+      "page_start": 9,
+      "char_count": 1607,
+      "word_count": 237,
+      "table_count": 1,
+      "subsections": [
+        "8.1 Price Match Guarantee (Prime Only)",
+        "8.2 Coupons, Vouchers & Promotional Codes"
+      ],
+      "content_hash": "aac5898cef63b6518eac3843e8bc0909",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_009",
+      "section_num": "9",
+      "title": "Section 9: Payment, Billing & Fraud Prevention",
+      "content": "9.1 Billing Disputes & Chargebacks\nCustomers who believe they have been incorrectly charged must first contact ShopNow support before initiating a chargeback with\ntheir card issuer. ShopNow resolves valid billing disputes within 3 business days (Standard) or 24 hours (Prime).\nDispute Type Resolution\nUnauthorised charge Immediate account security review; temporary hold; refund if confirmed\nDuplicate charge Refund within 24h; Prime: 2h\nSubscription not cancelled Refund of most recent charge if cancellation evidence provided\nItem not received Refund or replacement after carrier investigation\nAmount mismatch Audit trail reviewed; overpayment refunded same day\nBNPL dispute Handled jointly with BNPL provider; ShopNow mediates\n9.2 Fraud Prevention & Account Security\nFraud Signal Action\nUnusual order patterns Auto-flag: 5+ orders same IP within 1h; agent review required\nAddress mismatch Billing/shipping mismatch on high-value orders triggers manual review\nGift card abuse Bulk gift card purchases >$500 require identity verification\nAccount takeover (ATO) Password + email change within 24h: 48h security hold on new address\nReturn fraud >3 returns without purchase pattern: account flagged for review\nPromotional abuse Same code used >5 times across linked accounts: code revoked\nDevice fingerprinting New device on high-value order: 2FA mandatory\nSynthetic identity AI scoring <60: manual ID verification before order release\nAgent Note \u2014 Account Suspension: Never suspend an account without Tier 3 approval. If a fraudulent pattern is detected, place\norder on 'hold pending review' and escalate. Suspended accounts receive written notice with appeal process within 24 hours.",
+      "page_start": 11,
+      "char_count": 1683,
+      "word_count": 239,
+      "table_count": 1,
+      "subsections": [
+        "9.1 Billing Disputes & Chargebacks",
+        "9.2 Fraud Prevention & Account Security"
+      ],
+      "content_hash": "38e81352703f028488824efcbde69175",
+      "access_level": "confidential"
+    },
+    {
+      "section_id": "sec_010",
+      "section_num": "10",
+      "title": "Section 10: Account Management",
+      "content": "10.1 Account Verification & Identity\nCustomer identity must be verified before any account modification. Verification levels:\nVerification Level Required For\nLevel 1 \u2014 Email OTP Password reset, order history view\nLevel 2 \u2014 SMS + Email Address change, payment method update, email change\nLevel 3 \u2014 ID Upload Account ownership dispute, high-value refund >$500, account reinstatement\nLevel 4 \u2014 Video Call Suspected account takeover, legal/court requests\n10.2 Account Closure & Data Deletion\n\nAccount closure request: Customer submits via Settings > Account > Close Account. 7-day cooling-off period during which account\nis deactivated but not deleted. Customer may reactivate by logging in.\nGDPR / CCPA data deletion: Upon confirmed closure, personal data deleted within 30 days. Financial transaction records retained 7\nyears (regulatory requirement). Anonymised purchase data may be retained for analytics.",
+      "page_start": 11,
+      "char_count": 905,
+      "word_count": 131,
+      "table_count": 1,
+      "subsections": [
+        "10.1 Account Verification & Identity",
+        "10.2 Account Closure & Data Deletion"
+      ],
+      "content_hash": "b3444086e68e825cac395b87def39dc7",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_011",
+      "section_num": "11",
+      "title": "Section 11: Product Reviews & Trust and Safety",
+      "content": "11.1 Review Policy\nPolicy Detail\nEligibility Must have purchased and received item; verified purchase badge shown\nWindow Can submit 7 days after delivery; editable for 14 days post-submission\nContent rules No personal information, no hate speech, no competitor URLs\nIncentivised reviews Strictly prohibited; accounts offering payment for reviews suspended\nSeller responses Sellers may reply once per review; replies moderated within 24h\nRemoval by customer Customer may delete own review at any time\nRemoval by ShopNow Only for guideline violations; seller cannot request removal\nFake review detection AI + human moderation; confirmed fake reviews trigger seller penalty",
+      "page_start": 12,
+      "char_count": 670,
+      "word_count": 96,
+      "table_count": 1,
+      "subsections": [
+        "11.1 Review Policy"
+      ],
+      "content_hash": "12dba415f94e5aafa1aefec75dbf331c",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_012",
+      "section_num": "12",
+      "title": "Section 12: Loyalty, Rewards & Referral Programme",
+      "content": "12.1 ShopNow Coins (Loyalty Points)\nShopNow Coins are earned on every qualifying purchase and redeemable against future orders. 1 Coin = $0.01 in purchasing power.\nEarning/Rule Detail\nStandard purchases 1 Coin per $1 spent\nPrime purchases 2 Coins per $1 spent\nShopNow Wallet pay 3 Coins per $1 spent (all tiers)\nBirthday month 3x Coins on all purchases during birth month\nReview submission 10 Coins per verified purchase review\nReferral (referee) 500 Coins upon first qualifying purchase\nReferral (referrer) 200 Coins upon referee's first qualifying purchase\nCoin expiry Standard: 12 months from earning date; Prime: 24 months\nRedemption minimum 100 Coins ($1) minimum per transaction\nRedemption cap Maximum 30% of order value payable in Coins per transaction",
+      "page_start": 13,
+      "char_count": 759,
+      "word_count": 117,
+      "table_count": 1,
+      "subsections": [
+        "12.1 ShopNow Coins (Loyalty Points)"
+      ],
+      "content_hash": "763dd28ccbbd78741a82ea4c8039832e",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_013",
+      "section_num": "13",
+      "title": "Section 13: Special Categories & Restricted Items",
+      "content": "13.1 Age-Restricted Products\nCategory Restriction Details\nAlcohol 21+ verification required; ID scan at delivery; no delivery to unattended location\nTobacco / Vaping 21+ verification; additional state-level compliance checks\nFirearms accessories Legal accessories only; state law compliance mandatory; buyer background check\nAdult content 18+ verification; separate adult storefront; not shown to unverified accounts\nPrescription items Valid prescription required; fulfilled by licensed pharmacy partners only\nLottery / gambling Prohibited unless regulatory licence held by seller; state-by-state review\n13.2 Hazardous & Prohibited Items\nClassification Policy\nProhibited \u2014 absolute Illegal weapons, CSAM, narcotics, human trafficking materials\nProhibited \u2014 platform Counterfeit goods, stolen property, pirated software\nHazmat \u2014 permitted Batteries, paint, adhesives \u2014 shipped by ground only; no air\nPerishables Temperature-controlled shipping; 48-hour max transit\nLive animals Not sold on ShopNow; only pet supplies and accessories\nMedical devices Class I permitted; Class II/III require FDA approval documentation",
+      "page_start": 13,
+      "char_count": 1114,
+      "word_count": 142,
+      "table_count": 1,
+      "subsections": [
+        "13.1 Age-Restricted Products",
+        "13.2 Hazardous & Prohibited Items"
+      ],
+      "content_hash": "d91a5f42ca8c1fa4246fdafddc2cde87",
+      "access_level": "public"
+    },
+    {
+      "section_id": "sec_014",
+      "section_num": "14",
+      "title": "Section 14: Accessibility, Legal & Compliance",
+      "content": "14.1 Accessibility Support\nShopNow is committed to WCAG 2.1 AA compliance across all customer-facing surfaces. Customers requiring accessibility assistance\nshould contact the dedicated Accessibility Support line (available 24/7 for all tiers). Services available: screen reader optimised\ncheckout, large-print order confirmations, verbal order confirmation via phone, assisted ordering via phone agent.\n14.2 Privacy & Data Handling\nArea Policy\nData collected Name, address, payment, browsing, purchase history, device data\nData shared Shipping carriers (delivery), payment processors, fraud prevention partners\nData sold Never sold to third parties for marketing\nOpt-out Marketing emails: unsubscribe link; tracking: Cookie preferences page\nData portability Export all personal data within 30 days via Settings > Privacy > Export\nBreach notification Customers notified within 72 hours of confirmed breach (GDPR Art. 33)\nRetention policy Active data: account lifetime; deleted accounts: 30 days; financial: 7 years\nCOPPA Accounts for under-13 require parental consent; parental controls available\n14.3 Dispute Resolution & Legal Notices\nAll customer disputes that cannot be resolved through standard support channels are subject to binding arbitration under AAA\nCommercial Arbitration Rules. Class action waiver applies. Governing law: State of Delaware. Disputes must be filed within 1 year of\nthe transaction date.\nFor legal notices (subpoenas, court orders, regulatory requests): submit to legal@shopnow.com. Response within 5 business days.\nLaw enforcement requests processed through dedicated Legal Operations team.\nThis knowledge base is the authoritative source for all ShopNow customer-facing policy. | Effective April 1, 2026 | Next review: October 1,\n2026. Policy questions: policy@shopnow.com. RAG system maintainer: ai-ops@shopnow.com.",
+      "page_start": 13,
+      "char_count": 1846,
+      "word_count": 248,
+      "table_count": 1,
+      "subsections": [
+        "14.1 Accessibility Support",
+        "14.2 Privacy & Data Handling",
+        "14.3 Dispute Resolution & Legal Notices"
+      ],
+      "content_hash": "90591730ab1dd6779b57103e11231f47",
+      "access_level": "confidential"
+    }
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "word_count": 53,
+      "has_content": true
+    },
+    {
+      "page_num": 2,
+      "word_count": 360,
+      "has_content": true
+    },
+    {
+      "page_num": 3,
+      "word_count": 306,
+      "has_content": true
+    },
+    {
+      "page_num": 4,
+      "word_count": 309,
+      "has_content": true
+    },
+    {
+      "page_num": 5,
+      "word_count": 334,
+      "has_content": true
+    },
+    {
+      "page_num": 6,
+      "word_count": 58,
+      "has_content": true
+    },
+    {
+      "page_num": 7,
+      "word_count": 369,
+      "has_content": true
+    },
+    {
+      "page_num": 8,
+      "word_count": 233,
+      "has_content": true
+    },
+    {
+      "page_num": 9,
+      "word_count": 384,
+      "has_content": true
+    },
+    {
+      "page_num": 10,
+      "word_count": 184,
+      "has_content": true
+    },
+    {
+      "page_num": 11,
+      "word_count": 322,
+      "has_content": true
+    },
+    {
+      "page_num": 12,
+      "word_count": 163,
+      "has_content": true
+    },
+    {
+      "page_num": 13,
+      "word_count": 279,
+      "has_content": true
+    },
+    {
+      "page_num": 14,
+      "word_count": 250,
+      "has_content": true
+    }
+  ]
+}

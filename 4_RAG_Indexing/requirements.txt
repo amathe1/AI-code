@@ -1,0 +1,17 @@
+PyPDF2
+pdfplumber
+Pillow
+reportlab
+pdf2image
+python-magic
+python-docx
+openpyxl
+python-pptx
+pypdf
+pdfplumber
+Pillow
+reportlab
+pdf2image
+pytesseract
+pandas
+tabula-py

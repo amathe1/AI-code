@@ -1,0 +1,299 @@
+{
+  "created_at": "2026-04-13T16:31:54.597973",
+  "total_items": 18,
+  "sections_covered": [
+    "sec_001",
+    "sec_004",
+    "sec_005",
+    "sec_006",
+    "sec_008",
+    "sec_012"
+  ],
+  "eval_results": {
+    "overall": {
+      "p@5": 0.3778,
+      "r@5": 1.0,
+      "mrr": 0.963,
+      "ndcg": 1.4856,
+      "ctx_p": 0.3778,
+      "ctx_r": 0.7155
+    },
+    "by_category": {
+      "comparative": {
+        "p@5": 0.425,
+        "r@5": 1.0,
+        "mrr": 0.9167,
+        "ndcg": 1.5568,
+        "ctx_p": 0.425,
+        "ctx_r": 0.7316
+      },
+      "edge_case": {
+        "p@5": 0.4,
+        "r@5": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.5,
+        "ctx_p": 0.4,
+        "ctx_r": 0.5263
+      },
+      "policy_lookup": {
+        "p@5": 0.4,
+        "r@5": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.6309,
+        "ctx_p": 0.4,
+        "ctx_r": 0.694
+      },
+      "procedural": {
+        "p@5": 0.4,
+        "r@5": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.6309,
+        "ctx_p": 0.4,
+        "ctx_r": 1.0
+      },
+      "factual_complex": {
+        "p@5": 0.3333,
+        "r@5": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.4206,
+        "ctx_p": 0.3333,
+        "ctx_r": 0.7349
+      },
+      "factual_simple": {
+        "p@5": 0.2,
+        "r@5": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "ctx_p": 0.2,
+        "ctx_r": 0.6062
+      }
+    },
+    "n_items": 18
+  },
+  "score_targets": {
+    "p@5": 0.6,
+    "r@5": 0.7,
+    "mrr": 0.55,
+    "ndcg": 0.65,
+    "ctx_p": 0.6,
+    "ctx_r": 0.7
+  },
+  "golden_items": [
+    {
+      "item_id": "gold_0000",
+      "question": "What is the monthly cost of Prime membership?",
+      "ground_truth": "The monthly cost of Prime membership is $14.99.",
+      "section_ids": [
+        "sec_001"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:24.882794"
+    },
+    {
+      "item_id": "gold_0001",
+      "question": "How long is the Prime free trial?",
+      "ground_truth": "The provided policy text does not specify the duration of the Prime free trial.",
+      "section_ids": [
+        "sec_001"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:26.061972"
+    },
+    {
+      "item_id": "gold_0002",
+      "question": "Can Prime benefits be shared with family members?",
+      "ground_truth": "The provided policy text does not mention whether Prime benefits can be shared with family members.",
+      "section_ids": [
+        "sec_001"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:28.038930"
+    },
+    {
+      "item_id": "gold_0003",
+      "question": "What is the order cutoff time for Prime same-day delivery?",
+      "ground_truth": "The order cutoff time for Prime same-day delivery is 12:00 PM.",
+      "section_ids": [
+        "sec_004"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:29.401174"
+    },
+    {
+      "item_id": "gold_0004",
+      "question": "Is 2-day shipping free for all Prime members?",
+      "ground_truth": "Yes, 2-day shipping is free for all Prime members.",
+      "section_ids": [
+        "sec_004"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:30.267053"
+    },
+    {
+      "item_id": "gold_0005",
+      "question": "What happens if my package is lost in transit?",
+      "ground_truth": "The provided policy text does not include any information regarding what happens if a package is lost in transit.",
+      "section_ids": [
+        "sec_004"
+      ],
+      "category": "edge_case",
+      "difficulty": "hard",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:31.267159"
+    },
+    {
+      "item_id": "gold_0006",
+      "question": "How many days does a Prime member have to return electronics?",
+      "ground_truth": "A Prime member has 30 days to return electronics (general).",
+      "section_ids": [
+        "sec_005"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:32.733489"
+    },
+    {
+      "item_id": "gold_0007",
+      "question": "Are digital downloads refundable?",
+      "ground_truth": "No, digital downloads are not refundable. A refund is only provided in the case of a technical delivery failure.",
+      "section_ids": [
+        "sec_005"
+      ],
+      "category": "policy_lookup",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:33.685091"
+    },
+    {
+      "item_id": "gold_0008",
+      "question": "What is the step-by-step return process?",
+      "ground_truth": "1. Customer initiates return via Account > Orders > Return Item (or contacts support).\n2. System validates: item eligibility, return window, order status.\n3. Return label generated (prepaid for Prime; $3.99 deducted for Standard on non-defective returns).",
+      "section_ids": [
+        "sec_005"
+      ],
+      "category": "procedural",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:35.487542"
+    },
+    {
+      "item_id": "gold_0009",
+      "question": "What photos do I need to submit for a damage claim?",
+      "ground_truth": "You need to submit a minimum of 3 clear photos: (a) outer packaging, (b) damage close-up, and (c) item label/serial number.",
+      "section_ids": [
+        "sec_006"
+      ],
+      "category": "factual_complex",
+      "difficulty": "hard",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:36.794994"
+    },
+    {
+      "item_id": "gold_0010",
+      "question": "How quickly must I report a damaged item after delivery?",
+      "ground_truth": "You must report a damaged item within 48 hours of delivery for transit damage and within 72 hours for Prime items.",
+      "section_ids": [
+        "sec_006"
+      ],
+      "category": "factual_complex",
+      "difficulty": "hard",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:37.743409"
+    },
+    {
+      "item_id": "gold_0011",
+      "question": "Will I get a replacement or refund for a damaged item?",
+      "ground_truth": "The resolution for a damaged item depends on the type of damage:\n\n- For **Transit Damage**, you will receive a replacement or a full refund, and no return is required.\n- For **Concealed Damage**, you must provide a photo within 48 hours of delivery, and the resolution will depend on the assessment of the damage.\n- For a **Manufacturer Defect**, you can get a replacement or a refund, along with a warranty claim.\n- For **Wear-and-tear Damage**, it is not covered, and the customer bears the cost.\n- If you received the **Wrong Item**, the correct item will be dispatched, and a return label will be sent.\n- For **Counterfeit / Inauthentic** items, you will receive a full refund, a $25 credit, and an investigation will be initiated.\n\nIn summary, you will get a replacement or refund if the item is damaged due to transit, is a manufacturer defect, or is counterfeit.",
+      "section_ids": [
+        "sec_006"
+      ],
+      "category": "policy_lookup",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:42.023548"
+    },
+    {
+      "item_id": "gold_0012",
+      "question": "How does the Price Match Guarantee work for Prime members?",
+      "ground_truth": "Prime members are entitled to ShopNow's Price Match Guarantee on identical products sold by authorised retailers. If a Prime member finds the exact item at a lower price within 7 days of purchase, ShopNow will refund the difference plus an additional 5% credit to their ShopNow Wallet.",
+      "section_ids": [
+        "sec_008"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:43.995453"
+    },
+    {
+      "item_id": "gold_0013",
+      "question": "Can I stack multiple coupons on one order?",
+      "ground_truth": "The provided policy text does not mention anything about stacking multiple coupons on one order.",
+      "section_ids": [
+        "sec_008"
+      ],
+      "category": "factual_simple",
+      "difficulty": "easy",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:44.885697"
+    },
+    {
+      "item_id": "gold_0014",
+      "question": "Which retailers are eligible for price matching?",
+      "ground_truth": "Price matching is available for identical products sold by authorised retailers.",
+      "section_ids": [
+        "sec_008"
+      ],
+      "category": "policy_lookup",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:45.753097"
+    },
+    {
+      "item_id": "gold_0015",
+      "question": "How many Coins do I earn per dollar as a Prime member?",
+      "ground_truth": "As a Prime member, you earn 2 Coins per $1 spent.",
+      "section_ids": [
+        "sec_012"
+      ],
+      "category": "comparative",
+      "difficulty": "medium",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:46.529894"
+    },
+    {
+      "item_id": "gold_0016",
+      "question": "When do my ShopNow Coins expire?",
+      "ground_truth": "ShopNow Coins expire 12 months from the earning date for standard purchases and 24 months from the earning date for Prime purchases.",
+      "section_ids": [
+        "sec_012"
+      ],
+      "category": "factual_simple",
+      "difficulty": "easy",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:47.539433"
+    },
+    {
+      "item_id": "gold_0017",
+      "question": "What is the minimum number of Coins I can redeem?",
+      "ground_truth": "The minimum number of Coins you can redeem is 100 Coins, which is equivalent to $1.",
+      "section_ids": [
+        "sec_012"
+      ],
+      "category": "factual_complex",
+      "difficulty": "hard",
+      "access_level": "public",
+      "created_at": "2026-04-13T16:31:48.493843"
+    }
+  ]
+}
