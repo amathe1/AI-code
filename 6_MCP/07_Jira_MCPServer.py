@@ -17,7 +17,6 @@
 #    3. Copy and export as JIRA_API_TOKEN
 #    https://anilkds85.atlassian.net?continue=https%3A%2F%2Fanilkds85.atlassian.net%2Fwelcome%2Fsoftware&atlOrigin=eyJpIjoiMGViN2I1ZTY0ODRlNDdiOGIxYWZhNzc1ZGJiMGZkMGUiLCJwIjoiaiJ9
 #    gvbigdata@gmail.com
-#    JIRA_API_TOKEN = REMOVED 
 #  RUN:
 #    python jira_mcp_server.py
 # ============================================================
