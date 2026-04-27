@@ -1,0 +1,38 @@
+Open Git Bash from cursor or vscode
+Also open docker desktop app
+chmod +x DB_Setup.sh
+./DB_Setup.sh
+
+=====================================================
+In MCP Inspector — Test with these real URLs
+Tool: read_webpage
+Try any of these as the url argument:
+# Python documentation
+https://docs.python.org/3/library/asyncio.html
+
+# Wikipedia article
+https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+
+# FastMCP documentation
+https://gofastmcp.com/getting-started/welcome
+
+# Anthropic documentation
+https://docs.anthropic.com/en/docs/overview
+
+# Any news article
+https://techcrunch.com
+
+Tool: extract_links
+url          = https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+internal_only = false
+
+Tool: extract_tables
+# Wikipedia has lots of tables - great for testing
+url = https://en.wikipedia.org/wiki/Python_(programming_language)
+
+Tool: batch_read_pages
+urls = [
+  "https://docs.python.org/3/",
+  "https://fastapi.tiangolo.com",
+  "https://langchain.readthedocs.io"
+]

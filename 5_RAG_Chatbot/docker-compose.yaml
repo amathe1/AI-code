@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  pgvector:
+    image: ankane/pgvector:latest
+    container_name: pgvector_db
+    environment:
+      POSTGRES_DB: rag_db
+      POSTGRES_USER: rag_user
+      POSTGRES_PASSWORD: rag_password
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    container_name: redis_cache
+    ports:
+      - "6379:6379"

@@ -1,0 +1,6 @@
+streamlit
+openai
+psycopg2-binary
+redis
+pdfplumber
+pyyaml

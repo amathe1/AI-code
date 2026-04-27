@@ -1,0 +1,56 @@
+app:
+  name: rag-genai-chatbot
+  env: local
+  log_level: INFO
+
+paths:
+  raw_pdf: D:\GenAI Content\AI code\5_RAG_Chatbot\data\raw\Build_a_Large_Language_Model_From_Scratch_Sebastian_Raschka_Priority-1.pdf
+  data_json: data/processed/data.json
+  chunks_json: data/processed/chunks.json
+  embeddings_json: data/processed/embeddings.json
+  golden_dataset: data/processed/GoldenDataSet.json
+  logs: data/logs/app.log
+
+indexing:
+  run_on_startup: true
+  index_flag_file: data/processed/.index_done
+
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+embedding:
+  provider: openai
+  model: text-embedding-3-small
+
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  ttl_seconds: 3600
+  enabled: true
+
+pgvector:
+  host: localhost
+  port: 5432
+  db: rag_db
+  user: rag_user
+  password: rag_password
+  table: document_embeddings
+
+docker:
+  auto_start: false
+  wait_time_seconds: 0
+
+search:
+  top_k: 5
+
+reranking:
+  top_k: 3
+
+evaluation:
+  enabled: true
+
+access_control:
+  enabled: false
