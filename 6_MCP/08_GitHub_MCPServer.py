@@ -279,7 +279,7 @@ load_dotenv(Path(__file__).parent / ".env")
 def log(msg):
     print(msg, file=sys.stderr, flush=True)
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
+GITHUB_TOKEN = os.getenv("GITHUB_API_TOKEN", "")
 GITHUB_API   = "https://api.github.com"
 
 log(f"GITHUB_TOKEN: {'SET' if GITHUB_TOKEN else 'NOT SET'}")

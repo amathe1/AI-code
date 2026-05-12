@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = OpenAI(model='gpt-3.5-turbo-instruct')
+llm = OpenAI(model='gpt-3.5-turbo-instruct', temperature=0.0)
 result = llm.invoke("What is the capital of Andhra Pradesh ?")
 
 print(result)
+

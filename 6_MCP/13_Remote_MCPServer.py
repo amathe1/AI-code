@@ -1,17 +1,17 @@
 """
-cd "C:\Personal\2024\Learning\Generative AI\RAG\27_Context_Engineering\3_MCP"
+cd "D:\GenAI Content\AI code\6_MCP"
 
 git init
 git add .
 git status          # verify .env is NOT listed
 git commit -m "Add MCP servers for Agentic AI"
-git remote add origin https://github.com/gvbigdata/GenAI_MCP_Servers.git
+git remote add origin https://github.com/amathe1/AI-code.git
 git push -u origin main
 
 Calculator MCP Client — Server loaded from GitHub
 pip install openai mcp python-dotenv
 Add OPENAI_API_KEY to .env
-Run: python 13_Calculator_Client.py
+Run: python 13_Remote_MCPServer.py
 """
 
 import os
@@ -32,7 +32,7 @@ load_dotenv(Path(__file__).parent / ".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 # ── GitHub config ─────────────────────────────────────────
-GITHUB_REPO    = "https://github.com/gvbigdata/GenAI_AgenticAI_RAG.git"
+GITHUB_REPO    = "https://github.com/amathe1/AI-code.git"
 SERVER_FILE    = "02_Calculator_MCPServer.py"   # file name inside repo
 
 

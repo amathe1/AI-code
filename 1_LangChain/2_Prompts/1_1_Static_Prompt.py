@@ -7,7 +7,7 @@
 # It does not adapt based on user inputs.
 # Simple and good for structured tasks.
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
